@@ -1,0 +1,230 @@
+/* ===========================================================
+                            HEADER
+============================================================= */
+
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    transition: 0.5s ease;
+    background: rgba(226, 226, 226, 0.6);
+}
+
+header .brand{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'century gothic';
+    letter-spacing: 1em;
+    word-break: break-all;
+    margin-left: 25px;
+}
+
+header .architecture{
+    position: right;
+    justify-content: right;
+}
+header .architecture .architecture-items a{
+    position: right;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'century gothic';
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    justify-self: right;
+    justify-content: right;
+}    
+
+
+/* ===========================================================
+                            CONTENT
+============================================================= */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'century gothic';
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-selection{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+    padding: -10px -10PX;
+    
+}
+.image-section img{
+    width: 120%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    bottom: -150px;
+}
+.content-selection .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #000;
+}
+.content-selection .content h3{
+    margin-top: 20px;
+    color: #080808;
+    font-size: 20px;
+    
+}
+.content-selection .content p{
+    margin-top: 10px;
+    font-family: 'century gothic';
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-selection{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }  
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content-selection .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-selection .social{
+        text-align: center;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+}
+
+/* ===========================================================
+                            PEOPLE
+============================================================= */
+
+
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    background: rgba(226, 226, 226, 0.6);
+
+}
+.container1{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+.content-selection1{
+    float: left;
+    width: 55%;
+}
+.image-section1{
+    float: right;
+    width: 40%;
+    padding: -10px -10PX;
+    
+}
+.image-section1 img{
+    width: 120%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    bottom: -150px;
+}
+.content-selection .title1{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #000;
+}
+.content-selection1 .content1 h3{
+    margin-top: 20px;
+    color: #080808;
+    font-size: 20px;
+    
+}
+.content-selection1 .content1 p{
+    margin-top: 10px;
+    font-family: 'century gothic';
+    font-size: 17px;
+    line-height: 1.5;
+    
+}
+
+@media screen and (max-width: 768px){
+    .container1{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-selection1{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }  
+    .image-section1{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content-selection1 .title1{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-selection1 .social{
+        text-align: center;
+    }
+    .image-section1 img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+}

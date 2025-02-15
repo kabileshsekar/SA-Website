@@ -1,0 +1,199 @@
+/* ===========================================================
+                            HEADER
+============================================================= */
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    transition: 0.5s ease;
+    background: rgba(226, 226, 226, 0.6);
+}
+
+header .brand{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'century gothic';
+    letter-spacing: 1em;
+    word-break: break-all;
+    margin-left: 25px;
+}
+
+header .architecture{
+    position: right;
+    justify-content: right;
+}
+header .architecture .architecture-items a{
+    position: right;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'century gothic';
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    justify-self: right;
+    justify-content: right;
+}    
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'century gothic';
+}
+
+.container{
+	min-height: 100vh;
+	width: 100%;
+	background-color: #fff;
+}
+
+.service-wrapper{
+	padding: 5% 8%;
+}
+
+.service{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1{
+	color: black;
+	font-size: 5rem;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: transparent;
+	letter-spacing: 4px;
+	background: black; 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: relative; 
+}
+h1:after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 10%;
+	height: 8px;
+	width: 80%;
+	border-radius: 8px;
+	background-color: black;
+	opacity: .5;
+}
+
+h1 span{
+	position: absolute;
+	top: 100%;
+	left: 10%;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background-color: black;
+	animation: anim 5s linear infinite;
+}
+
+@keyframes anim{
+	95%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		left: 88%;
+	}
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 30px;
+	margin-top: 80px;
+}
+
+.card{
+	height: 350px;
+	width: 370px;
+	background-color: #828285;
+	padding: 3% 8%;
+	border: 0.2px solid rgba(114, 226, 174, 0.2);
+	border-radius: 8px;
+	transition: .6s;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+.card:after{
+	content: "";
+	position: absolute;
+	top: 150%;
+	left: -200px;
+	width: 120px;
+	transform: rotate(50deg);
+	background-color: #fff;
+	height: 18px;
+	filter: blur(30px);
+	opacity: 0.5;
+	transition: 1s;
+}
+.card:hover:after{
+	width: 225%;
+	top: -100%;
+
+}
+
+.card i{
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 4.8rem;
+}
+
+.card h2{
+	color: black;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.card p{
+	text-align: center;
+	width: 100%;
+	margin: 12px 0;
+	color: black;
+}
+
+.card:hover{
+	background-color: transparent;
+	transform: translate(-8px);
+	border-color: black;
+}
+
+.card:hover i{
+	color: black;
+}
+
+@media screen and (max-width:1200px){
+	.cards{
+		grid-template-columns: repeat(2,1fr);
+	}
+}@media screen and (max-width:900px){
+	.cards{
+		grid-template-columns: repeat(1,1fr);
+	}
+	h1{
+		font-size: 3.5rem;
+	}
+}
